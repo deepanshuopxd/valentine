@@ -3,7 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '../components/Navbar';
 
-const API_URL = '/api/notes';
+const API_URL = 'http://localhost:5000/api/notes';
 
 function LeaveNoteRouted({ userName }) {
   const [searchParams] = useSearchParams();
