@@ -3,9 +3,9 @@ import DayPageTemplate from '../components/DayPageTemplate';
 
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1558679388-a8a8c094dd3c?w=400&q=80', alt: 'Fluffy teddy bear' },
-  { src: 'https://images.unsplash.com/photo-1611074789680-73e2a694a725?w=400&q=80', alt: 'Teddy bear with heart' },
-  { src: 'https://images.unsplash.com/photo-1536640765-7483fd51871d?w=400&q=80', alt: 'Cute stuffed bear' },
+  { src: 'https://www.wallpaperbetter.com/wallpaper/117/1/171/white-teddy-bear-cute-free-background-for-computer-720P-wallpaper-middle-size.jpg', alt: 'Fluffy teddy bear' },
+  { src: 'https://www.shutterstock.com/shutterstock/photos/2362412815/display_1500/stock-vector-cute-white-teddy-bear-with-heart-2362412815.jpg', alt: 'Teddy bear with heart' },
+  { src: 'https://i.etsystatic.com/50181749/r/il/1ecfb9/5781945935/il_fullxfull.5781945935_j22k.jpg', alt: 'Cute stuffed bear' },
 ];
 
 function TeddyDay({ userName }) {

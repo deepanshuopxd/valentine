@@ -4,9 +4,9 @@ import DayPageTemplate from '../components/DayPageTemplate';
 
 /* ── Online images for Rose Day ── */
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&q=80', alt: 'Red roses bouquet' },
-  { src: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=400&q=80', alt: 'Single red rose' },
-  { src: 'https://images.unsplash.com/photo-1490750967868-1ad571e3e200?w=400&q=80', alt: 'Rose petals' },
+  { src: 'https://res.cloudinary.com/bloomnation/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1548918792/vendor/275/catalog/product/4/3/43bcc32b2649458027302b53479196a9.jpg', alt: 'Red roses bouquet' },
+  { src: 'https://static.vecteezy.com/system/resources/previews/028/034/484/large_2x/elegant-white-rose-blossoms-adorning-background-in-abundance-ai-generated-free-photo.jpg', alt: 'Single red rose' },
+  { src: 'https://as1.ftcdn.net/v2/jpg/01/86/45/16/1000_F_186451657_AR54N594fdsa5FOHSvy5OR1XS3jHIWSI.jpg', alt: 'Rose petals' },
 ];
 
 function RoseDay({ userName }) {
