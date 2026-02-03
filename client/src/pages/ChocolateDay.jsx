@@ -3,9 +3,9 @@ import DayPageTemplate from '../components/DayPageTemplate';
 
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1611224885273-b93570173457?w=400&q=80', alt: 'Chocolate box' },
-  { src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', alt: 'Dark chocolate' },
-  { src: 'https://images.unsplash.com/photo-1572116470910-1bc688a38988?w=400&q=80', alt: 'Chocolate pieces' },
+  { src: 'https://img1.cgtrader.com/items/1002414/f1b63dd761/chocolate-box-3d-model-max--obj-mtl-fbx.jpg', alt: 'Chocolate box' },
+  { src: 'https://m.media-amazon.com/images/I/61nzp7jt+hL._SL1200_.jpg', alt: 'Dark chocolate' },
+  { src: 'https://m.media-amazon.com/images/I/61+ESe18blL._SX342_.jpg', alt: 'Chocolate pieces' },
 ];
 
 function ChocolateDay({ userName }) {
