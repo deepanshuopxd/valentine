@@ -3,9 +3,9 @@ import DayPageTemplate from '../components/DayPageTemplate';
 
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1515890435833-a8dd6c6ff771?w=400&q=80', alt: 'Hands holding' },
-  { src: 'https://images.unsplash.com/photo-1491746027182-23156dbaa22b?w=400&q=80', alt: 'White dove' },
-  { src: 'https://images.unsplash.com/photo-1504383631473-408983f52b74?w=400&q=80', alt: 'Sunset couple' },
+  { src: 'https://img.freepik.com/free-photo/man-woman-making-pinky-promise_23-2148378534.jpg', alt: 'Hands holding' },
+  { src: 'https://d104tpg70nvstz.cloudfront.net/2017/04/honeymoon.jpg', alt: 'White dove' },
+  { src: 'https://tse1.explicit.bing.net/th/id/OIP.E70JT7I9lM3FZNhBcW32bwHaEu?w=720&h=459&rs=1&pid=ImgDetMain&o=7&rm=3', alt: 'Sunset couple' },
 ];
 
 function PromiseDay({ userName }) {

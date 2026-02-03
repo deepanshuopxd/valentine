@@ -3,9 +3,9 @@ import DayPageTemplate from '../components/DayPageTemplate';
 
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1515562141589-67f0d569b6a7?w=400&q=80', alt: 'Diamond ring' },
-  { src: 'https://images.unsplash.com/photo-1515562141589-67f0d569b6a8?w=400&q=80', alt: 'Proposal setup' },
-  { src: 'https://images.unsplash.com/photo-1506632549135-3e0ac4406e53?w=400&q=80', alt: 'Couple proposal' },
+  { src: 'https://static.vecteezy.com/system/resources/previews/022/660/294/non_2x/wedding-proposal-cartoon-colored-clipart-free-vector.jpg', alt: 'Diamond ring' },
+  { src: 'https://cdn5.vectorstock.com/i/1000x1000/50/44/cartoon-marriage-proposal-vector-985044.jpg', alt: 'Proposal setup' },
+  { src: 'https://cdn1.vectorstock.com/i/1000x1000/12/75/romantic-marriage-proposal-silhouette-image-vector-44891275.jpg', alt: 'Couple proposal' },
 ];
 
 function ProposalDay({ userName }) {

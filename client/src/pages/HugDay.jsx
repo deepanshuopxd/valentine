@@ -5,9 +5,9 @@ import DayPageTemplate from '../components/DayPageTemplate';
 
 
 const IMAGES = [
-  { src: 'https://images.unsplash.com/photo-1491491578545-98182c625608?w=400&q=80', alt: 'Couple hugging' },
-  { src: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&q=80', alt: 'Warm embrace' },
-  { src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80', alt: 'Hug moment' },
+  { src: 'https://img.freepik.com/premium-vector/valentines-day-girl-hugs-guy-couple-love-vector-cartoon-style_844724-2535.jpg', alt: 'Couple hugging' },
+  { src: 'https://gifdb.com/images/high/peach-and-goma-hug-m2o3js9u468ergqx.gif', alt: 'Warm embrace' },
+  { src: 'https://tse1.explicit.bing.net/th/id/OIP._KYfOhTjP438UpnxBjlDowHaHa?w=1920&h=1920&rs=1&pid=ImgDetMain&o=7&rm=3', alt: 'Hug moment' },
 ];
 
 function HugDay({ userName }) {
