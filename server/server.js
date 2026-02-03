@@ -4,8 +4,8 @@ require('dotenv').config();
 const connectDB = require('./config/db');
 const notesRouter = require('./routes/notes');
 
+// 1. Initialize App FIRST
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -22,6 +22,13 @@ app.get('/', (req, res) => {
   res.json({ message: '💝 Valentine Week API is running!' });
 });
 
-app.listen(PORT, () => {
-  console.log(`💝 Server running on http://localhost:${PORT}`);
-});
+// 2. Local Server Setup (This runs only on your laptop)
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+// 3. Export App LAST (This is what Vercel needs)
+module.exports = app;

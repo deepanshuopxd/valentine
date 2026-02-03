@@ -11,7 +11,7 @@ export default defineConfig({
   server: {
     host: true,
     port: 5173,
-    // Optional: Proxy API requests to backend to avoid CORS issues in dev
+    // Proxy for local development only
     proxy: {
       '/api': {
         target: 'http://localhost:5000',
@@ -19,4 +19,9 @@ export default defineConfig({
       },
     },
   },
+  // 🔴 ADD THIS SECTION FOR VERCEL DEPLOYMENT
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  }
 })
