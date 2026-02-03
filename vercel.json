@@ -1,3 +1,5 @@
+
+
 {
   "version": 2,
   "builds": [
@@ -17,8 +19,12 @@
       "destination": "/server/server.js" 
     },
     { 
+      "source": "/assets/(.*)", 
+      "destination": "/client/dist/assets/$1" 
+    },
+    { 
       "source": "/((?!api/|.*\\..*).*)", 
-      "destination": "/client/index.html" 
+      "destination": "/client/dist/index.html" 
     }
   ]
 }
