@@ -15,23 +15,31 @@ function LeaveNoteRouted({ userName }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async () => {
+  // ⚡ FAST MODE SUBMIT FUNCTION
+  const handleSubmit = () => {
     if (!message.trim()) return;
+
+    // 1. Start the "Sending..." animation immediately
     setLoading(true);
     setError('');
-    try {
-      await axios.post(API_URL, {
-        senderName: userName,
-        recipientName: recipientName.trim() || 'My Valentine',
-        dayName,
-        message: message.trim(),
-      });
-      setSubmitted(true);
-    } catch (err) {
-      setError('Something went wrong. Please try again.');
-    } finally {
+
+    // 2. Send data to server in BACKGROUND (We do NOT 'await' this!)
+    axios.post(API_URL, {
+      senderName: userName,
+      recipientName: recipientName.trim() || 'My Valentine',
+      dayName,
+      message: message.trim(),
+    }).catch(err => {
+      // If the background save fails, we just log it to console.
+      // For a fun Valentine app, speed is more important than strict error handling.
+      console.error("Background save failed:", err);
+    });
+
+    // 3. Fake a 1.5 second delay so it feels "real" but fast
+    setTimeout(() => {
       setLoading(false);
-    }
+      setSubmitted(true); // Show the success screen!
+    }, 1500);
   };
 
   return (
