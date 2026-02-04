@@ -12,6 +12,7 @@ import KissDay from './pages/KissDay';
 import ValentinesDay from './pages/ValentinesDay';
 import LeaveNoteRouted from './pages/LeaveNoteRouted';
 import FloatingHearts from './components/FloatingHearts';
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const [userName, setUserName] = useState(() => {
